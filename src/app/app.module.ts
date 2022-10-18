@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { SharedModule } from './modules/shared/shared.module';
+import { GifsModule } from './modules/gifs/gifs.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule,
+    GifsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
